@@ -11,9 +11,7 @@ app.get("/api/getStudent", (req, res) => {
 	res.json(students);
 });
 
-
-
 //PORT: 3000, 3001, 3002, 3003, 5001, 8080, 8081
-app.listen(3000, () => {
+app.listen(3000 || process.env.PORT, () => {
 	console.log("Running");
 });
